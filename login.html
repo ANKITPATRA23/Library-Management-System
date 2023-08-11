@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form method="POST" action="{{ url_for('login') }}">
+        <div>
+          <label for="roll">Roll Number:</label>
+          <input type="text" name="roll" id="roll" required>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+          <input type="submit" value="Log in">
+        </div>
+    </form>
+  </body>
+</html>
